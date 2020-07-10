@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Ingredients_array">
+        <item>Baking Powder</item>
+        <item>Baking Soda</item>
+        <item>Brown Sugar</item>
+        <item>Flour</item>
+        <item>Liquid/Wet</item>
+        <item>Raw Sugar</item>
+    </string-array>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEBD0"
+    tools:context=".ImperialtoMetric">
+
+    <TextView
+        android:id="@+id/ItoMoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:text="sample output yay"
+        android:textColor="#212121 "
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItoMConvert"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/ItoMSelectConvertType"
+        android:layout_width="208dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F3F3F3"
+        android:entries="@array/conversionOptions_array"
+        app:layout_constraintBottom_toTopOf="@+id/ItoMIngredient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItoMTitle"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <Spinner
+        android:id="@+id/ItoMUnits"
+        android:layout_width="94dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="#F3F3F3"
+        android:entries="@array/imperial_measurements_array"
+        android:gravity="center"
+        android:isScrollContainer="true"
+        android:overScrollMode="always"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ItoMInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/ItoMIngredient"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F3F3F3"
+        android:entries="@array/Ingredients_array"
+        app:layout_constraintBottom_toTopOf="@+id/ItoMInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ItoMConvert"
+        android:layout_width="140dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        android:background="#F3F3F3"
+        android:onClick="ChooseSelection"
+        android:text="Convert to    Metric"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItoMInput" />
+
+    <EditText
+        android:id="@+id/ItoMInput"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="200dp"
+        android:background="#F9E79F "
+        android:ems="10"
+        android:hint="Enter amount"
+        android:textColorHint="#515A5A"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ItoMTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Imperial to Metric"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

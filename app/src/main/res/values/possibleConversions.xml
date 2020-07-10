@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="conversionOptions_array">
+        <item>Conversion Options...</item>
+        <item>Metric to Imperial</item>
+        <item>Imperial to Metric</item>
+        <item>Imperial to Imperial</item>
+
+    </string-array>
+</resources>
