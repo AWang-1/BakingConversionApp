@@ -14,3 +14,9 @@ Once everything is satisfactory, press the "Convert" button and the results will
 Greeting: 
 Hello, judges! This is a small, simple, and functional app. Hopefully this prototype accurately captures the idea of what the completed app will be: 
 easy conversions between Imperial and Metric units.
+
+Video demo:
+https://vimeo.com/436999963
+
+List of team members:
+Alexa Wang
